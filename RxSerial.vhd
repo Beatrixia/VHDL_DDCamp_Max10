@@ -1,16 +1,14 @@
 ----------------------------------------------------------------------------------
 -- Timing Diagram (App WaveDrom)
--- [
---   {name: 'Clk',					wave: 'P.....|.|.|.|.|.|.|.|.|......' , period: 1}	,
---   {name: 'RxFfFull',			wave: '1.....|.|.|.|.|.|.|.|.|0.....' }	,
---   {name: 'SerDataIn',			wave: '1....0|1|0|1|0|1|.|0|.|1.....' }	,
---   {name: 'RxFfWrEn',			wave: '0.....|.|.|.|.|.|.|.|.|.1.0..' }	,
---   {name: 'RxFfWrData',			wave: 'x.....|.|.|.|.|.|.|.|.|.2.2..' , 	data : "35h" }	,
---   {name: 'rDataCnt',			wave: '2.....2.2.2.2.2.2.2.2.2....' , 	data : " 9 8 7 6 5 4 3 2 1 0 9" }	,
---   {name: 'rBaudEn',				wave: '0....1|.|.|.|.|.|.|.|.|.0....' }	,
---   {name: 'rBaudCnt',			wave: '2....22.2.2.2.2.2.2.2.2.2....' , 	data : " half count full full full full full full full full full half" }	,
---   {name: 'rState',				wave: '2....22...............2.2.2..' , 	data : " stIdle stStart stWrData stWtStop stWtSend Idle" }	,
--- ] ,
+  {name: 'Clk',					wave: 'P.....|.|.|.|.|.|.|.|.|......' , period: 1}	,
+  {name: 'RxFfFull',			wave: '1.....|.|.|.|.|.|.|.|.|0.....' }	,
+  {name: 'SerDataIn',			wave: '1....0|1|0|1|0|1|.|0|.|1.....' }	,
+  {name: 'RxFfWrEn',			wave: '0.....|.|.|.|.|.|.|.|.|.1.0..' }	,
+  {name: 'RxFfWrData',			wave: 'x.....|.|.|.|.|.|.|.|.|.2.2..' , 	data : "35h" }	,
+  {name: 'rDataCnt',			wave: '2.....2.2.2.2.2.2.2.2.2....' , 	data : " 9 8 7 6 5 4 3 2 1 0 9" }	,
+  {name: 'rBaudEn',				wave: '0....1|.|.|.|.|.|.|.|.|.0....' }	,
+  {name: 'rBaudCnt',			wave: '2....22.2.2.2.2.2.2.2.2.2....' , 	data : " half count full full full full full full full full full half" }	,
+  {name: 'rState',				wave: '2....22...............2.2.2..' , 	data : " stIdle stStart stWrData stWtStop stWtSend Idle" }	,
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
