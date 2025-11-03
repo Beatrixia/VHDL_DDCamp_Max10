@@ -2,9 +2,8 @@
 -- Timing Diagram (App WaveDrom)
 {signal: 
  [
-  {name: 'Clk',					wave: 'P.....|.|.|.|.|.|.|.|.|......' 	,		period: 1}	,
-  {node: '.....AB.C.D.E.F.G.H.I.J.K',	phase: 0.15}	,
-  {node: '.....',			phase: 0.15}	,
+  {name: 'Clk',					wave: 'P.....|.|.|.|.|.|.|.|.|......' ,		period: 1}	,
+  {								node: '.....AB.C.D.E.F.G.H.I.J.K....' ,		phase: 0.15}	,
   {name: 'RxFfFull',			wave: '1.....|.|.|.|.|.|.|.|.|0.....' }	,
   {name: 'SerDataIn',			wave: '1....0|1|0|1|0|1|.|0|.|1.....' }	,
   {name: 'RxFfWrEn',			wave: '0.....|.|.|.|.|.|.|.|.|.1.0..' }	,
