@@ -128,6 +128,7 @@ Begin
 						end if;
 					when stWtSend =>
 						if ( rSerDataIn(1)='1' ) then
+							-- 118 use when stopbit='0' then w8 for rSerDataIn(1)='1' again
 							rSerState		<= stIdle;
 						else
 							rSerState		<= rSerState;
