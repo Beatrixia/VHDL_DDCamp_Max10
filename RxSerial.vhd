@@ -1,14 +1,22 @@
 ----------------------------------------------------------------------------------
 -- Timing Diagram (App WaveDrom)
-  {name: 'Clk',					wave: 'P.....|.|.|.|.|.|.|.|.|......' , period: 1}	,
+{signal: 
+ [
+  {name: 'Clk',					wave: 'P.....|.|.|.|.|.|.|.|.|......' 	,		period: 1}	,
+  {node: '.....AB.C.D.E.F.G.H.I.J.K',	phase: 0.15}	,
+  {node: '.....',			phase: 0.15}	,
   {name: 'RxFfFull',			wave: '1.....|.|.|.|.|.|.|.|.|0.....' }	,
   {name: 'SerDataIn',			wave: '1....0|1|0|1|0|1|.|0|.|1.....' }	,
   {name: 'RxFfWrEn',			wave: '0.....|.|.|.|.|.|.|.|.|.1.0..' }	,
-  {name: 'RxFfWrData',			wave: 'x.....|.|.|.|.|.|.|.|.|.2.2..' , 	data : "35h" }	,
-  {name: 'rDataCnt',			wave: '2.....2.2.2.2.2.2.2.2.2....' , 	data : " 9 8 7 6 5 4 3 2 1 0 9" }	,
-  {name: 'rBaudEn',				wave: '0....1|.|.|.|.|.|.|.|.|.0....' }	,
+  {name: 'RxFfWrData',			wave: 'x.....|.|.|.|.|.|.|.|.|.2.2..' ,		data : "35h" }	,
+  {name: 'rDataCnt',			wave: '2.....2.2.2.2.2.2.2.2.2......' , 	data : " 9 8 7 6 5 4 3 2 1 0 9" }	,
+  {name: 'rBaudEn',				wave: '0....1|.|.|.|.|.|.|.|.|.0....' , }	,
   {name: 'rBaudCnt',			wave: '2....22.2.2.2.2.2.2.2.2.2....' , 	data : " half count full full full full full full full full full half" }	,
   {name: 'rState',				wave: '2....22...............2.2.2..' , 	data : " stIdle stStart stWrData stWtStop stWtSend Idle" }	,
+ ] ,
+  config: { hscale: 1}	,
+  edge: ['A+B 434','B+C 868','D+C 868','D+E 868','E+F 868','F+G 868','G+H 868','H+I 868','I+J 868','J+K 868']
+}
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
