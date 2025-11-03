@@ -33,7 +33,7 @@ Architecture HTWTestBench Of Tb Is
 -------------------------------------------------------------------------
 	
 	signal	TM			: integer	range 0 to 65535;
-  signal	TT			: integer	range 0 to 65535;
+	signal	TT			: integer	range 0 to 65535;
 
   ------ insert signal i/o here ------
 
